@@ -21,3 +21,11 @@ d.bark();
 Animal a = new Dog();
 a.makeSound();
 ```
+
+- 最后，还可以动态的改变对象的行为
+```
+Duck duck = new ModelDuck();
+duck.performFly();
+duck.setFlyBehavior(new FlyRocketPowered());
+duck.performFly();
+```

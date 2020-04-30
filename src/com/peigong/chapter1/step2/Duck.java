@@ -6,9 +6,9 @@ package com.peigong.chapter1.step2;
  **/
 public abstract class Duck {
 
-    public FlyBehavior flyBehavior;
+    protected FlyBehavior flyBehavior;
 
-    public QuackBehavior quackBehavior;
+    protected QuackBehavior quackBehavior;
 
     public abstract void display();
 
@@ -24,5 +24,11 @@ public abstract class Duck {
         flyBehavior.fly();
     }
 
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
+    }
 
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
 }
