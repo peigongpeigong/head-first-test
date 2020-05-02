@@ -29,3 +29,10 @@ duck.performFly();
 duck.setFlyBehavior(new FlyRocketPowered());
 duck.performFly();
 ```
+
+```$xslt
+设计原则：多用组合，少用继承
+
+这就是策略模式
+策略模式定义了算法族，分别封装起来，让它们之间可以互相替换，此模式让算法的变化独立于使用算法的客户
+```
