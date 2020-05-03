@@ -1,4 +1,4 @@
-package com.peigong.observermode.unopzimized;
+package com.peigong.chapter2_observermode.observermode.unopzimized;
 
 /**
  * @author: lilei

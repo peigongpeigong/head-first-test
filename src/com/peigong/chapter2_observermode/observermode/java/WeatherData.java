@@ -1,8 +1,6 @@
-package com.peigong.observermode.java;
+package com.peigong.chapter2_observermode.observermode.java;
 
-import java.util.ArrayList;
 import java.util.Observable;
-import java.util.Observer;
 
 /**
  * @author: lilei

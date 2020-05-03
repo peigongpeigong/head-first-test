@@ -1,4 +1,4 @@
-package com.peigong.observermode.optimization;
+package com.peigong.chapter2_observermode.observermode.java;
 
 /**
  * @author: lilei
