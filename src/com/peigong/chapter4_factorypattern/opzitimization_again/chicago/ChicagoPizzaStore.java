@@ -5,7 +5,7 @@ import com.peigong.chapter4_factorypattern.opzitimization_again.pizza.*;
 import com.peigong.chapter4_factorypattern.opzimization.ChicagoStyleCheesePizza;
 import com.peigong.chapter4_factorypattern.opzimization.ChicagoStyleClamPizza;
 import com.peigong.chapter4_factorypattern.opzimization.ChicagoStylePepperoniPizza;
-import com.peigong.chapter4_factorypattern.opzimization.PizzaStore;
+import com.peigong.chapter4_factorypattern.opzitimization_again.PizzaStore;
 
 /**
  * @author: lilei

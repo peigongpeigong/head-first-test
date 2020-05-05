@@ -1,7 +1,7 @@
 package com.peigong.chapter4_factorypattern.opzitimization_again.newyork;
 
 import com.peigong.chapter4_factorypattern.opzitimization_again.pizza.*;
-import com.peigong.chapter4_factorypattern.opzimization.*;
+import com.peigong.chapter4_factorypattern.opzitimization_again.PizzaStore;
 import com.peigong.chapter4_factorypattern.opzitimization_again.PizzaIngredientFactory;
 
 /**

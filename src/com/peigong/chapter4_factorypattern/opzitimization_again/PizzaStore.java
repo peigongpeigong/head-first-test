@@ -1,6 +1,6 @@
 package com.peigong.chapter4_factorypattern.opzitimization_again;
 
-import com.peigong.chapter4_factorypattern.Pizza;
+import com.peigong.chapter4_factorypattern.opzitimization_again.pizza.Pizza;
 
 /**
  * @author: lilei
