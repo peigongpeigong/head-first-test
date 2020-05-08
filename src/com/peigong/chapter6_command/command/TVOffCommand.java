@@ -6,21 +6,21 @@ import com.peigong.chapter6_command.TV;
  * @author: lilei
  * @create: 2020-05-07 14:22
  **/
-public class TVOnCommand implements Command {
+public class TVOffCommand implements Command {
 
     private TV tv;
 
-    public TVOnCommand(TV tv) {
+    public TVOffCommand(TV tv) {
         this.tv = tv;
     }
 
     @Override
     public void execute() {
-        tv.on();
+        tv.off();
     }
 
     @Override
     public void undo() {
-        tv.off();
+        tv.on();
     }
 }

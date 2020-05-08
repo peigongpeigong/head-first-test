@@ -1,4 +1,4 @@
-package com.peigong.charpter4_singletonpattern.opzimization;
+package com.peigong.chapter5_singletonpettern.opzimization;
 
 /**
  * @author: lilei

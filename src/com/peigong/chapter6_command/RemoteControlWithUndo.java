@@ -7,12 +7,13 @@ import com.peigong.chapter6_command.command.NoCommand;
  * @author: lilei
  * @create: 2020-05-07 13:35
  **/
-public class RemoteControl {
+public class RemoteControlWithUndo {
 
-    Command[] onCommands;
-    Command[] offCommands;
+    private Command[] onCommands;
+    private Command[] offCommands;
+    private Command undoCommand;
 
-    public RemoteControl() {
+    public RemoteControlWithUndo() {
         onCommands = new Command[7];
         offCommands = new Command[7];
         NoCommand noCommand = new NoCommand();
@@ -20,6 +21,7 @@ public class RemoteControl {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
         }
+        undoCommand = noCommand;
     }
 
     public void setCommands(int slot, Command onCommand, Command offCommand) {
@@ -29,10 +31,16 @@ public class RemoteControl {
 
     public void onButtonWasPressed(int slot) {
         onCommands[slot].execute();
+        undoCommand = onCommands[slot];
     }
 
     public void offButtonWasPressed(int slot) {
         offCommands[slot].execute();
+        undoCommand = offCommands[slot];
+    }
+
+    public void undoCommandWasPressed(){
+        undoCommand.undo();
     }
 
     @Override
@@ -42,6 +50,7 @@ public class RemoteControl {
         for (int i = 0; i < onCommands.length; i++) {
             stringBuffer.append("[slot" + i + "] " + onCommands[i].getClass().getName() + "    " + offCommands[i].getClass().getName() + "\n");
         }
+        stringBuffer.append("undoCommand:" + undoCommand.getClass().getName());
         return stringBuffer.toString();
     }
 }

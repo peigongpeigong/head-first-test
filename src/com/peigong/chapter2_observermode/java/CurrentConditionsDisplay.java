@@ -1,4 +1,4 @@
-package com.peigong.chapter2_observermode.observermode.java;
+package com.peigong.chapter2_observermode.java;
 
 import java.util.Observable;
 import java.util.Observer;

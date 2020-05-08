@@ -6,19 +6,19 @@ import com.peigong.chapter6_command.CeilingFan;
  * @author: lilei
  * @create: 2020-05-07 14:10
  **/
-public class CeilingFanHighCommand  implements Command{
+public class CeilingFanMediumCommand implements Command{
 
     CeilingFan ceilingFan;
     int prevSpeed;
 
-    public CeilingFanHighCommand(CeilingFan ceilingFan) {
+    public CeilingFanMediumCommand(CeilingFan ceilingFan) {
         this.ceilingFan = ceilingFan;
     }
 
     @Override
     public void execute() {
         prevSpeed = ceilingFan.getSpeed();
-        ceilingFan.high();
+        ceilingFan.medium();
     }
 
     @Override
